@@ -1,0 +1,111 @@
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone  {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+.content{
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+
+.image1 {
+  background-image: url('../../../assets/connected.png');
+  width: 50px;
+  height: 50px;
+}
+
+.container {
+  position: relative;
+}
+
+.right-heading {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  font-size: 15px;
+}
+
+.right-heading2 {
+  position: absolute;
+  top: 100px;
+  right: 115px;
+  font-size: 15px;
+}
+
+.right-heading3{
+  position: absolute;
+  top: 180px;
+  right: 25px;
+  font-size: 15px;
+}
+
+.right-heading4{
+  position: absolute;
+  top: 280px;
+  right: 85px;
+  font-size: 15px;
+}
+
+.right-heading5{
+  position: absolute;
+  top: 5px;
+  right: 80px;
+  font-size: 15px;
+}
+
+.right-heading6{
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  font-size: 15px;
+}
