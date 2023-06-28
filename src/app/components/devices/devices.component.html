@@ -3,27 +3,28 @@
 <div class="smartphone">
   <div class="content">
     <div class="iframe">
+      <button style="margin: 10px;height: 30px; background-color: lightblue" onclick="window.location.href='https://ai-doc-lckylke.vercel.app/'"> Go back to AI Chat</button>
       <a href="/connected-devices">
         <img src="assets/connected.png" style="height: 130px; width: 160px; margin-left: 100px">
       </a>
       <h1 style="margin-left: 80px;font-size: 25px;margin-top: 5px">Connected Devices </h1>
       <hr style="color:#000000; height: 5px;background-color: black"/>
       <div class="container">
-        <img src="assets/watch.png" style="height: 120px; width: 120px;position: absolute;margin-top: 40px">
+        <img src="assets/watch.png" style="height: 120px; width: 120px;position: absolute;margin-top: 10px">
         <button class="right-heading" [class.disconnected]="!isConnected[0]" (click)="handleClick(0)">
           {{ isConnected[0] ? 'Connected' : 'Disconnected' }}
         </button>
       </div>
 
       <div class="container">
-        <img src="assets/thermometer.png" style="height: 120px; width: 70px; position: absolute; margin-top: 170px; margin-left: 20px">
+        <img src="assets/thermometer.png" style="height: 120px; width: 70px; position: absolute; margin-top: 140px; margin-left: 20px">
         <button class="right-heading2" [class.disconnected]="!isConnected[1]" (click)="handleClick(1)">
           {{ isConnected[1] ? 'Connected' : 'Disconnected' }}
         </button>
       </div>
 
       <div class="container">
-        <img src="assets/sleep.png" style="height: 120px; width: 120px;position: absolute;margin-top: 300px">
+        <img src="assets/sleep.png" style="height: 120px; width: 120px;position: absolute;margin-top: 270px">
         <button class="right-heading3" [class.disconnected]="!isConnected[2]" (click)="handleClick(2)">
           {{ isConnected[2] ? 'Connected' : 'Disconnected' }}
         </button>
